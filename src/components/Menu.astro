@@ -44,12 +44,6 @@ const siteLangFormat = siteLang.replace("_", "-");
 								<dt>
 									<div class="flex justify-between items-center">
 										<span class="font-bold text-2xl tracking-wide">{item.name}</span>
-										<span class="font-medium text-lg">
-											{new Intl.NumberFormat(siteLangFormat, {
-												style: "currency",
-												currency: siteCurrency,
-											}).format(item.price)}
-										</span>
 									</div>
 								</dt>
 								<dd>

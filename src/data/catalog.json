@@ -1,0 +1,200 @@
+[
+	{
+		"id": 1,
+		"slug": "aluminum-scrap",
+		"prettyName": "Aluminum Scrap",
+		"description": "High-purity aluminum scrap in various grades for smelting and reprocessing.",
+		"plates": [
+			{
+				"name": "Taint/Tabor (ISRI TAINT)",
+				"description": "Mixed aluminum scrap with minimal contamination. Suitable for secondary smelting operations.",
+				"price": null
+			},
+			{
+				"name": "UBC - Used Beverage Cans",
+				"description": "Post-consumer aluminum beverage cans, baled or loose. High recovery rates for can-to-can recycling.",
+				"price": null
+			},
+			{
+				"name": "Tense (ISRI TENSE)",
+				"description": "New aluminum scrap from manufacturing processes. Clean, segregated alloys with minimal impurities.",
+				"price": null
+			},
+			{
+				"name": "6063 Extrusion Scrap",
+				"description": "Clean aluminum window frames, extrusions, and profiles. Segregated alloy suitable for direct remelting.",
+				"price": null
+			},
+			{
+				"name": "Aluminum Wire & Cable",
+				"description": "Insulated and bare aluminum wire, stripped or whole. Various gauges available for recovery operations.",
+				"price": null
+			}
+		]
+	},
+	{
+		"id": 2,
+		"slug": "iron-steel-scrap",
+		"prettyName": "Iron & Steel Scrap",
+		"description": "Ferrous scrap for electric arc furnace feed and steelmaking applications.",
+		"plates": [
+			{
+				"name": "HMS 1 & 2 (Heavy Melting Steel)",
+				"description": "Mixed heavy melting scrap, plate and structural steel. Standard grades for bulk export and steelmaking.",
+				"price": null
+			},
+			{
+				"name": "Shredded Steel Scrap",
+				"description": "Auto bodies and appliances processed through shredders. Fragmented ferrous suitable for furnace charging.",
+				"price": null
+			},
+			{
+				"name": "Bundled Steel",
+				"description": "Compressed and bundled light gauge steel. Consistent density for efficient shipping and melting.",
+				"price": null
+			},
+			{
+				"name": "Plate & Structural",
+				"description": "Heavy steel plate, beams, and structural demolition materials. High-density scrap for blast furnace feed.",
+				"price": null
+			},
+			{
+				"name": "Turnings & Borings",
+				"description": "Machining scrap from steel fabrication. Requires processing or briquetting for furnace use.",
+				"price": null
+			}
+		]
+	},
+	{
+		"id": 3,
+		"slug": "plastics",
+		"prettyName": "Plastics & Polymers",
+		"description": "Post-consumer and post-industrial plastic scrap for recycling and reprocessing.",
+		"plates": [
+			{
+				"name": "PET Bottle Flakes",
+				"description": "Washed and sorted PET from beverage bottles. Clear and colored grades available for fiber or bottle production.",
+				"price": null
+			},
+			{
+				"name": "HDPE Natural & Colored",
+				"description": "High-density polyethylene from bottles and containers. Baled, shredded, or regrind forms.",
+				"price": null
+			},
+			{
+				"name": "LDPE Film Scrap",
+				"description": "Post-industrial and post-consumer film. Agricultural film, stretch wrap, and packaging materials.",
+				"price": null
+			},
+			{
+				"name": "PP Polypropylene Scrap",
+				"description": "Mixed PP from automotive parts, containers, and industrial applications. Regrind or whole bales.",
+				"price": null
+			},
+			{
+				"name": "ABS & Engineering Resins",
+				"description": "Electronic housings, automotive trim, and appliance parts. Higher-value engineering plastics.",
+				"price": null
+			}
+		]
+	},
+	{
+		"id": 4,
+		"slug": "other-materials",
+		"prettyName": "Other Materials",
+		"description": "Non-ferrous metals, e-waste, and specialty materials for recovery and recycling.",
+		"plates": [
+			{
+				"name": "Copper Wire & Cable",
+				"description": "Insulated and bare copper wire in various gauges. Millberry, birch/cliff grades for smelting.",
+				"price": null
+			},
+			{
+				"name": "E-Waste & Circuit Boards",
+				"description": "Electronic scrap including motherboards, hard drives, and components. For precious metal recovery.",
+				"price": null
+			},
+			{
+				"name": "Stainless Steel Scrap",
+				"description": "304, 316, and mixed stainless grades. Turnings, solids, and segregated alloys.",
+				"price": null
+			},
+			{
+				"name": "Lead-Acid Batteries",
+				"description": "Whole or crushed automotive and industrial batteries. For lead recovery and recycling.",
+				"price": null
+			},
+			{
+				"name": "Copper Radiators",
+				"description": "Clean and uncleaned automotive radiators. High copper content for processing.",
+				"price": null
+			}
+		]
+	},
+	{
+		"id": 5,
+		"slug": "machinery-appliances",
+		"prettyName": "Machinery & Appliances",
+		"description": "Decommissioned industrial equipment and appliances for scrap or refurbishment.",
+		"plates": [
+			{
+				"name": "Industrial Machinery",
+				"description": "Manufacturing equipment, CNC machines, and processing lines. For parts recovery or scrap.",
+				"price": null
+			},
+			{
+				"name": "Electric Motors",
+				"description": "Whole motors from industrial and commercial applications. Copper and steel recovery.",
+				"price": null
+			},
+			{
+				"name": "Transformers",
+				"description": "Power distribution transformers with copper windings. Oil-filled and dry types.",
+				"price": null
+			},
+			{
+				"name": "White Goods",
+				"description": "Refrigerators, washers, dryers, and appliances. For shredding or component recovery.",
+				"price": null
+			},
+			{
+				"name": "HVAC Equipment",
+				"description": "Air conditioners, chillers, and commercial HVAC units. Copper and aluminum content.",
+				"price": null
+			}
+		]
+	},
+	{
+		"id": 6,
+		"slug": "chemicals",
+		"prettyName": "Chemicals & Industrial Agents",
+		"description": "Industrial cleaning agents, solvents, and specialty chemicals for manufacturing applications.",
+		"plates": [
+			{
+				"name": "Industrial Degreasers",
+				"description": "Solvent-based and aqueous degreasers for metal cleaning and surface preparation. Bulk quantities available.",
+				"price": null
+			},
+			{
+				"name": "Surfactants & Detergents",
+				"description": "Industrial-grade cleaning surfactants for manufacturing and commercial applications.",
+				"price": null
+			},
+			{
+				"name": "Solvents (NMP, MEK, Acetone)",
+				"description": "Industrial solvents for coating removal, parts washing, and process applications. Certified grades.",
+				"price": null
+			},
+			{
+				"name": "Acids & Bases",
+				"description": "Sulfuric acid, hydrochloric acid, caustic soda, and pH adjustment chemicals. Bulk and containerized.",
+				"price": null
+			},
+			{
+				"name": "Specialty Coatings & Lubricants",
+				"description": "Industrial lubricants, cutting fluids, and protective coatings for metalworking and manufacturing.",
+				"price": null
+			}
+		]
+	}
+]

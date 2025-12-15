@@ -9,79 +9,69 @@ import ButtonCallUs from "~/components/ButtonCallUs.astro";
 import Article from "~/components/Article.astro";
 
 // Images
-import PizzaHero from "~/assets/images/pizza-hero.png";
+import PizzaHero from "~/assets/images/professionals.jpg";
 ---
 
 <Layout>
 	<Section class:list={"bg-white"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
-				<Badge title="il ristorante italiana" />
-				<h1 class="font-black">Real Italian food in a real Italian restaurant...</h1>
+				<Badge title="global sourcing" />
+				<h1 class="font-black">Connecting buyers with industrial materials worldwide</h1>
 
 				<p>
-					Experience the taste of Italy with our authentic dishes made from the finest ingredients. Indulge in
-					our wide variety of pizzas, pastas, and desserts, all crafted with love and tradition. Whether
-					you're dining in or taking out, we promise a memorable culinary experience.
+					We specialize in sourcing ferrous and non-ferrous scrap, polymers, chemicals, and industrial equipment across international markets. Our platform connects buyers with verified suppliers and provides logistics coordination for complex supply chains.
 				</p>
 
-				<span class="text-brand-green font-medium">✔ We also deliver</span>
+				<span class="text-brand-green font-medium">✔ Transparent pricing and documentation</span>
 
 				<div class="mt-8 flex items-center gap-x-8">
-					<Button url="/book">Book now</Button>
+					<Button url="/book">Request a quote</Button>
 					<ButtonCallUs />
-				</div>
 			</div>
-			<div slot="hero-content-right">
-				<Picture
-					class:list={"mx-auto"}
-					src={PizzaHero}
-					height={600}
-					formats={["avif", "webp"]}
-					alt="A description of my image."
-					loading={"eager"}
-					fetchpriority={"high"}
-				/>
-			</div>
-		</Hero>
-	</Section>
-
-	<Section class:list={'bg-white'}>
+		</div>
+		<div slot="hero-content-right">
+			<Picture
+				class:list={"mx-auto rounded-[3rem] shadow-2xl"}
+				src={PizzaHero}
+				height={600}
+				formats={["avif", "webp"]}
+				alt="A description of my image."
+				loading={"eager"}
+				fetchpriority={"high"}
+			/>
+		</div>
+	</Hero>
+</Section>	<Section class:list={'bg-white'}>
 		<Article>
-			<h2>Welcome to AstroPie</h2>
+			<h2>Welcome to [Company Name]</h2>
 			<p>
-				Nestled in the heart of the city, <strong>AstroPie</strong> offers an authentic Italian dining experience
-				like no other. From the moment you step through our doors, you'll be transported to the vibrant streets of
-				Italy, where good food and great company are at the center of life.
+				With operations across multiple regions, <strong>[Company Name]</strong> provides comprehensive sourcing services for industrial materials. We connect buyers with vetted suppliers and offer logistics coordination for ferrous and non-ferrous scrap, polymers, chemicals, and decommissioned equipment.
 			</p>
 
-			<h3>Our Story</h3>
+			<h3>Our Approach</h3>
 			<p>
-				Founded in <em>1998</em>, our family-owned restaurant has always been a labor of love. Inspired by the
-				recipes passed down through generations, we bring the <u>rich culinary heritage</u> of Italy to your plate.
-				Every dish tells a story, and every meal is a celebration of flavor.
+				Founded to address transparency gaps in industrial materials trading, we focus on <u>verified sourcing</u>, clear documentation, and logistics support. Every transaction includes grade verification, compliance documentation, and end-to-end shipment coordination.
 			</p>
 
 			<h3>Our Philosophy</h3>
-			<blockquote>"The secret ingredient is always love."</blockquote>
+			<blockquote>"Transparent sourcing builds lasting supply relationships."</blockquote>
 			<p>
-				At AstroPie, we believe in the simple joy of fresh ingredients, time-honored techniques, and a
-				passion for creating memorable meals. From our hand-rolled pasta to our wood-fired pizzas, every bite is
-				crafted with care.
+				At [Company Name], we believe in clear pricing, verified quality standards, and reliable logistics. From initial inquiry to final delivery, we maintain visibility across the entire supply chain.
 			</p>
 
-			<h4>What Makes Us Special?</h4>
+			<h4>What Sets Us Apart?</h4>
 			<ul>
-				<li><strong>Authenticity:</strong> Traditional recipes, just like Nonna used to make.</li>
-				<li><strong>Fresh Ingredients:</strong> Locally sourced produce and imported Italian staples.</li>
-				<li><strong>Warm Atmosphere:</strong> A place where everyone feels like family.</li>
+				<li><strong>Quality Verification:</strong> Material testing and grade certification for all shipments.</li>
+				<li><strong>Logistics Coordination:</strong> FOB, CFR, CIF terms with transparent freight management.</li>
+				<li><strong>Regulatory Compliance:</strong> Full documentation support for cross-border transactions.</li>
 			</ul>
 
-			<h3>Join Us</h3>
+			<h3>Start Sourcing</h3>
 			<p>
-				Whether you're celebrating a special occasion or simply indulging in the pleasures of Italian cuisine, <strong
-					>AstroPie</strong
-				> is the perfect destination. <em>Come for the food, stay for the memories.</em>
+				Whether you're procuring scrap metals for smelting, polymers for recycling, or chemicals for manufacturing, <strong
+					>[Company Name]</strong
+				> offers reliable sourcing and logistics support. <em>Browse our catalog or submit an inquiry to get started.</em>
 			</p>
 		</Article>
 	</Section>

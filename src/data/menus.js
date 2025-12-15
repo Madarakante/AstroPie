@@ -5,12 +5,12 @@ export const menuMain = [
         highlighted: false,
     },
     {
-        name: "Menu",
+        name: "Catalog",
         url: "/menu",
         highlighted: false,
     },
     {
-        name: "About Us",
+        name: "About",
         url: "/about-us",
         highlighted: false,
     },
@@ -25,7 +25,7 @@ export const menuMain = [
         highlighted: false,
     },
     {
-        name: "Book",
+        name: "Request Quote",
         url: "/book",
         highlighted: true,
     },

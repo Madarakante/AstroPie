@@ -5,14 +5,21 @@
 <form action="#">
 	<div class="flex flex-col gap-8 mx-auto max-w-md">
 		<div>
-			<label for="name">Name</label>
+			<label for="name">Contact name</label>
 			<div class="mt-2">
 				<input type="text" name="name" id="name" required />
 			</div>
 		</div>
 
 		<div>
-			<label for="email">Email</label>
+			<label for="company">Company name</label>
+			<div class="mt-2">
+				<input type="text" name="company" id="company" required />
+			</div>
+		</div>
+
+		<div>
+			<label for="email">Work email</label>
 			<div class="mt-2 grid grid-cols-1">
 				<input type="email" name="email" id="email" required />
 			</div>
@@ -21,32 +28,58 @@
 		<div>
 			<label for="phone">Phone</label>
 			<div class="mt-2">
-				<input type="text" name="phone" id="phone" required />
+				<input type="tel" name="phone" id="phone" placeholder="+1 (555) 000-0000" required />
 			</div>
-			<small class="italic text-gray-500">We will call you to confirm your reservation</small>
+			<small class="italic text-gray-500">We will call to discuss logistics and compliance details</small>
 		</div>
 
 		<div>
-			<label for="date">Date & Time</label>
+			<label for="material">Material type & grade</label>
 			<div class="mt-2">
-				<input type="datetime-local" name="date" id="date" required />
+				<input type="text" name="material" id="material" placeholder="e.g., Copper cathode, HDPE regrind, HMS 1/2" required />
 			</div>
-			<small class="italic text-gray-500"
-				>We cannot guarantee availability at the chosen time and date, but will look for the closest opening</small
-			>
 		</div>
 
 		<div>
-			<label for="message">Notes</label>
+			<label for="volume">Volume & timeline</label>
+			<div class="mt-2">
+				<input type="text" name="volume" id="volume" placeholder="Tonnage and delivery schedule" required />
+			</div>
+		</div>
+
+		<div>
+			<label for="message">Additional details</label>
 			<div class="mt-2">
 				<textarea
 					name="message"
 					id="message"
 					rows="4"
 					required
-					placeholder="Let us know if you have any allergies, or have a specific table in mind"></textarea>
+					placeholder="Specify incoterms, destination port, inspection requirements, or other logistics needs"></textarea>
 			</div>
 		</div>
+
+		<div>
+			<button type="submit" class="button button-green group !px-8">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="size-5 -rotate-45 -mt-1 inline-block mr-1 group-hover:rotate-0 transition duration-300"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+					></path>
+				</svg>
+				Submit quote request
+			</button>
+		</div>
+	</div>
+</form>
 
 		<div>
 			<button type="submit" class="button button-green group !px-8">

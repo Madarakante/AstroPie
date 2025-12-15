@@ -1,10 +1,10 @@
 // Global variables
 export const siteLang = "en-US";
 export const siteCurrency = "USD";
-export const siteDomain = "astropie.com";
-export const siteName = "AstroPie";
-export const siteSlogan = "The best pies in the galaxy!";
-export const themeColor = "#FF0000";
+export const siteDomain = "company-name.com";
+export const siteName = "[Company Name]";
+export const siteSlogan = "Global sourcing for industrial materials";
+export const themeColor = "#1e3a5f";
 
 export const phone = {
 	href: "tel:+123456789",
@@ -12,16 +12,16 @@ export const phone = {
 };
 
 export const email = {
-	href: "mailto:info@astropie.com",
-	label: "info@astropie.com",
+	href: "mailto:sourcing@company-name.com",
+	label: "sourcing@company-name.com",
 };
 
 export const address = {
-	street: "1234 Space Street",
-	city: "Galaxy City",
-	zip: "12345",
-	state: "Milky Way",
-	country: "Space",
+	street: "[Address Line 1]",
+	city: "[City]",
+	zip: "[Postal Code]",
+	state: "[State/Region]",
+	country: "[Country]",
 };
 
 export const socialMedia = {

@@ -2,7 +2,7 @@ import { z, defineCollection } from "astro:content";
 import { file } from "astro/loaders";
 
 const plates = defineCollection({
-	loader: file("src/data/plates.json"),
+	loader: file("src/data/catalog.json"),
 	schema: z.object({
 		slug: z.string(),
 		prettyName: z.string(),
@@ -11,7 +11,7 @@ const plates = defineCollection({
 			z.object({
 				name: z.string(),
 				description: z.string(),
-				price: z.number(),
+				price: z.number().nullable(),
 			})
 		),
 	}),
