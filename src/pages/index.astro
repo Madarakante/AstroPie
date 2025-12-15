@@ -25,34 +25,41 @@ import Mussels from "~/assets/images/copper.jpg";
 ---
 
 <Layout title="Home" pageTitle="Home" description="Global sourcing for industrial materials and equipment.">
-	<Section class:list={"bg-white"}>
-		<Hero>
-			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
-				<Badge title="global sourcing" />
-				<h1 class="font-black">Reliable sourcing for industrial materials worldwide</h1>
+	<Section class:list={"relative overflow-hidden"}>
+		<div class="absolute inset-0 z-0">
+			<Picture
+				src={PizzaHero}
+				formats={["avif", "webp"]}
+				alt="Industrial materials background"
+				class="w-full h-full object-cover"
+				loading={"eager"}
+				fetchpriority={"high"}
+			/>
+			<div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/70"></div>
+		</div>
+		
+		<div class="relative z-10">
+			<Hero>
+				<div slot="hero-content-left" class="prose max-w-none">
+					<Badge title="global sourcing" />
+					<h1 class="font-black">Reliable sourcing for industrial materials worldwide</h1>
 
-				<p>
-					Access a comprehensive catalog of metals, plastics, chemicals, and industrial equipment. From scrap aluminum to specialized polymers, we connect buyers with quality materials and transparent logistics support across global supply chains.
-				</p>
+					<p>
+						Access a comprehensive catalog of metals, plastics, chemicals, and industrial equipment. From scrap aluminum to specialized polymers, we connect buyers with quality materials and transparent logistics support across global supply chains.
+					</p>
 
-				<span class="text-brand-green font-medium">✔ Full logistics coordination available</span>
+					<span class="text-brand-green font-medium">✔ Full logistics coordination available</span>
 
-				<div class="mt-8 flex items-center gap-x-8">
-					<Button url="/book">Request a quote</Button>
-					<ButtonCallUs />
+					<div class="mt-8 flex items-center gap-x-8">
+						<Button url="/book">Request a quote</Button>
+						<ButtonCallUs />
+					</div>
 				</div>
-			</div>
-			<div slot="hero-content-right" class="flex items-center">
-				<Picture
-					class:list={"mx-auto rounded-[3rem] overflow-hidden shadow-2xl w-full max-h-full object-cover"}
-					src={PizzaHero}
-					formats={["avif", "webp"]}
-					alt="A description of my image."
-					loading={"eager"}
-					fetchpriority={"high"}
-				/>
-			</div>
-		</Hero>
+				<div slot="hero-content-right">
+					<!-- Empty slot for layout balance -->
+				</div>
+			</Hero>
+		</div>
 	</Section>
 
 	<WideImage image={DecorativeImage} alt="Just an image" class:list={"aspect-video lg:aspect-[16/6]"} />
