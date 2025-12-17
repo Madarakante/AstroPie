@@ -29,6 +29,11 @@
 				"name": "Aluminum Wire & Cable",
 				"description": "Insulated and bare aluminum wire, stripped or whole. Various gauges available for recovery operations.",
 				"price": null
+			},
+			{
+				"name": "UBC - Used Beverage Cans (Aluminum)",
+				"description": "Post-consumer aluminum beverage cans ready for recycling. Baled or loose format for high-purity aluminum recovery.",
+				"price": null
 			}
 		]
 	},
@@ -115,6 +120,11 @@
 				"price": null
 			},
 			{
+				"name": "Ceramic PC Scrap",
+				"description": "Ceramic processors and CPU scrap with gold-plated pins. High-value material for precious metal extraction.",
+				"price": null
+			},
+			{
 				"name": "Stainless Steel Scrap",
 				"description": "304, 316, and mixed stainless grades. Turnings, solids, and segregated alloys.",
 				"price": null
@@ -193,6 +203,39 @@
 			{
 				"name": "Specialty Coatings & Lubricants",
 				"description": "Industrial lubricants, cutting fluids, and protective coatings for metalworking and manufacturing.",
+				"price": null
+			},
+			{
+				"name": "Used Cooking Oil (UCO)",
+				"description": "Post-consumer and commercial cooking oil for biodiesel production. Collected from restaurants and food processing facilities.",
+				"price": null
+			},
+			{
+				"name": "Used Engine Oil",
+				"description": "Waste motor oil from automotive and industrial sources. Suitable for re-refining or fuel blending.",
+				"price": null
+			},
+			{
+				"name": "Bitumen & Asphalt Products",
+				"description": "Petroleum bitumen for road construction and waterproofing applications. Various grades and viscosities available.",
+				"price": null
+			}
+		]
+	},
+	{
+		"id": 7,
+		"slug": "packaging-paper",
+		"prettyName": "Packaging & Paper Materials",
+		"description": "Recyclable packaging materials and paper products for reprocessing.",
+		"plates": [
+			{
+				"name": "OCC - Old Corrugated Containers",
+				"description": "Post-consumer cardboard boxes and corrugated packaging. Baled for paper mill recycling operations.",
+				"price": null
+			},
+			{
+				"name": "Used Containers (IBC, Drums, Pallets)",
+				"description": "Industrial bulk containers, steel/plastic drums, and wooden pallets. For reconditioning or recycling.",
 				"price": null
 			}
 		]
