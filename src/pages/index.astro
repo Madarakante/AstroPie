@@ -7,6 +7,7 @@ import Badge from "~/components/Badge.astro";
 import Button from "~/components/Button.astro";
 import ButtonCallUs from "~/components/ButtonCallUs.astro";
 import Grid from "~/components/Grid.astro";
+import { email, emailSecondary } from "~/data/config";
 import Heading from "~/components/Heading.astro";
 import WideImage from "~/components/WideImage.astro";
 import ReviewSlider from "~/components/ReviewSlider.astro";
@@ -35,23 +36,43 @@ import Mussels from "~/assets/images/copper.jpg";
 				loading={"eager"}
 				fetchpriority={"high"}
 			/>
-			<div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/70"></div>
+			<div class="absolute inset-0 bg-gradient-to-r from-white/98 via-white/95 to-white/90 md:from-white/95 md:via-white/85 md:to-white/70"></div>
 		</div>
 		
 		<div class="relative z-10">
 			<Hero>
 				<div slot="hero-content-left" class="prose max-w-none">
 					<Badge title="global sourcing" />
-					<h1 class="font-black">Reliable sourcing for industrial materials worldwide</h1>
+					<h1 class="font-black text-3xl md:text-4xl lg:text-5xl xl:text-6xl !leading-tight">Reliable sourcing for industrial materials worldwide</h1>
 
-					<p>
+					<p class="text-base md:text-lg">
 						Access a comprehensive catalog of metals, plastics, chemicals, and industrial equipment. From scrap aluminum to specialized polymers, we connect buyers with quality materials and transparent logistics support across global supply chains.
 					</p>
 
-					<span class="text-brand-green font-medium">✔ Full logistics coordination available</span>
+					<span class="font-medium flex items-center gap-2 text-sm md:text-base">
+						<svg class="size-5 flex-shrink-0 text-brand-green" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+						</svg>
+						Full logistics coordination available
+					</span>
 
-					<div class="mt-8 flex items-center gap-x-8">
-						<Button url="/book">Request a quote</Button>
+					<div class="flex flex-col sm:flex-row gap-3 text-xs sm:text-sm mt-4">
+						<a href={email.href} class="hover:underline flex items-center gap-2 break-all">
+							<svg class="size-4 sm:size-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+							</svg>
+							{email.label}
+						</a>
+						<a href={emailSecondary.href} class="hover:underline flex items-center gap-2 break-all">
+							<svg class="size-4 sm:size-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+							</svg>
+							{emailSecondary.label}
+						</a>
+					</div>
+
+					<div class="mt-6 md:mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+						<Button url="/menu">View products and services</Button>
 						<ButtonCallUs />
 					</div>
 				</div>
@@ -62,7 +83,7 @@ import Mussels from "~/assets/images/copper.jpg";
 		</div>
 	</Section>
 
-	<Section class:list={"bg-white"}>
+	<Section class:list={"bg-gradient-to-b from-gray-50 to-white"}>
 		<Heading>
 			<h2 slot="heading-title" class="font-black text-brand-green h2">Material categories</h2>
 			<p slot="heading-content">
@@ -72,16 +93,18 @@ import Mussels from "~/assets/images/copper.jpg";
 
 		<Grid>
 			<div slot="grid-content-1">
-				<div class="flex flex-col h-full">
-					<Picture
-						class:list={"not-prose w-full aspect-square object-cover rounded-3xl shadow-lg"}
-						src={Pizza}
-						formats={["avif", "webp"]}
-						alt="A description of my image."
-					/>
-					<div class="prose text-center flex-1 flex flex-col justify-start mt-6">
-						<h3 class="h4 mt-0 font-black">Aluminum Scrap</h3>
-						<p class="flex-1">
+				<div class="group flex flex-col h-full bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden hover:-translate-y-2">
+					<div class="overflow-hidden">
+						<Picture
+							class:list={"not-prose w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"}
+							src={Pizza}
+							formats={["avif", "webp"]}
+							alt="Aluminum scrap materials"
+						/>
+					</div>
+					<div class="prose text-center flex-1 flex flex-col justify-start p-6 pt-8">
+						<h3 class="h4 mt-0 font-black text-brand-green group-hover:text-brand-red transition-colors duration-300">Aluminum Scrap</h3>
+						<p class="flex-1 text-gray-600">
 							High-purity aluminum scrap including taint/tabor, UBC, tense, and segregated alloys. Sourced to ISRI specifications for downstream smelting and reprocessing.
 						</p>
 					</div>
@@ -89,16 +112,18 @@ import Mussels from "~/assets/images/copper.jpg";
 			</div>
 
 			<div slot="grid-content-2">
-				<div class="flex flex-col h-full">
-					<Picture
-						class:list={"not-prose w-full aspect-square object-cover rounded-3xl shadow-lg"}
-						src={Spaghetti}
-						formats={["avif", "webp"]}
-						alt="A description of my image."
-					/>
-					<div class="prose text-center flex-1 flex flex-col justify-start mt-6">
-						<h3 class="h4 mt-0 font-black">Iron &amp; Steel Scrap</h3>
-						<p class="flex-1">
+				<div class="group flex flex-col h-full bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden hover:-translate-y-2">
+					<div class="overflow-hidden">
+						<Picture
+							class:list={"not-prose w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"}
+							src={Spaghetti}
+							formats={["avif", "webp"]}
+							alt="Iron and steel scrap materials"
+						/>
+					</div>
+					<div class="prose text-center flex-1 flex flex-col justify-start p-6 pt-8">
+						<h3 class="h4 mt-0 font-black text-brand-green group-hover:text-brand-red transition-colors duration-300">Iron &amp; Steel Scrap</h3>
+						<p class="flex-1 text-gray-600">
 							Ferrous scrap grades from HMS 1/2 to shredded steel and bundled materials. Verified grades for furnace feed and industrial re-melt applications.
 						</p>
 					</div>
@@ -106,16 +131,18 @@ import Mussels from "~/assets/images/copper.jpg";
 			</div>
 
 		<div slot="grid-content-3">
-			<div class="flex flex-col h-full">
-				<Picture
-					class:list={"not-prose w-full aspect-square object-cover rounded-3xl shadow-lg"}
-					src={Fish}
-					formats={["avif", "webp"]}
-					alt="A description of my image."
-				/>
-				<div class="prose text-center flex-1 flex flex-col justify-start mt-6">
-					<h3 class="h4 mt-0 font-black">Plastics &amp; Polymers</h3>
-						<p class="flex-1">
+			<div class="group flex flex-col h-full bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden hover:-translate-y-2">
+				<div class="overflow-hidden">
+					<Picture
+						class:list={"not-prose w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"}
+						src={Fish}
+						formats={["avif", "webp"]}
+						alt="Plastic and polymer materials"
+					/>
+				</div>
+				<div class="prose text-center flex-1 flex flex-col justify-start p-6 pt-8">
+					<h3 class="h4 mt-0 font-black text-brand-green group-hover:text-brand-red transition-colors duration-300">Plastics &amp; Polymers</h3>
+						<p class="flex-1 text-gray-600">
 							Post-consumer and post-industrial plastic scrap including PET, HDPE, LDPE, PP, and engineering resins. Clean bales and regrind ready for recycling.
 						</p>
 					</div>
@@ -124,58 +151,66 @@ import Mussels from "~/assets/images/copper.jpg";
 		</Grid>
 	</Section>
 
-	<Section class:list={"bg-white"}>
-		<Hero>
-			<div slot="hero-content-left" class="prose lg:order-2">
-				<h1 class="font-black">Comprehensive catalog</h1>
+	<Section class:list={"bg-white relative overflow-hidden"}>
+		<div class="absolute inset-0 bg-gradient-to-br from-brand-green/5 via-transparent to-brand-red/5 pointer-events-none"></div>
+		<div class="relative">
+			<Hero>
+				<div slot="hero-content-left" class="prose lg:order-2">
+					<h1 class="font-black">Comprehensive catalog</h1>
 
-				<p>
-					Our materials catalog spans ferrous and non-ferrous metals, engineering plastics, industrial chemicals, and decommissioned machinery. Each category includes detailed grade specifications, typical applications, and available volumes.
-				</p>
+					<p class="text-lg">
+						Our materials catalog spans ferrous and non-ferrous metals, engineering plastics, industrial chemicals, and decommissioned machinery. Each category includes detailed grade specifications, typical applications, and available volumes.
+					</p>
 
-				<p>
-					Whether you're sourcing scrap for reprocessing or procuring raw materials for manufacturing, our catalog provides transparent product information and connects you with verified suppliers across global markets.
-				</p>
+					<p class="text-lg">
+						Whether you're sourcing scrap for reprocessing or procuring raw materials for manufacturing, our catalog provides transparent product information and connects you with verified suppliers across global markets.
+					</p>
 
-				<div class="mt-8">
-					<Button url="/menu">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							class="size-5 inline-block"
-							aria-hidden="true"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
-								clip-rule="evenodd"></path>
-						</svg>
-						View catalog
-					</Button>
+					<div class="mt-8">
+						<Button url="/menu">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 20 20"
+								fill="currentColor"
+								class="size-5 inline-block"
+								aria-hidden="true"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+									clip-rule="evenodd"></path>
+							</svg>
+							View catalog
+						</Button>
+					</div>
 				</div>
-			</div>
-			<div slot="hero-content-right">
-				<Picture
-					class:list={"mx-auto rounded-[3rem] shadow-2xl"}
-					src={CatalogHero}
-					height={600}
-					formats={["avif", "webp"]}
-					alt="A description of my image."
-				/>
-			</div>
-		</Hero>
+				<div slot="hero-content-right">
+					<div class="relative group">
+						<div class="absolute -inset-1 bg-gradient-to-r from-brand-green to-brand-red rounded-[3.5rem] blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
+						<Picture
+							class:list={"relative mx-auto rounded-[3rem] shadow-2xl"}
+							src={CatalogHero}
+							height={600}
+							formats={["avif", "webp"]}
+							alt="Industrial materials catalog"
+						/>
+					</div>
+				</div>
+			</Hero>
+		</div>
 	</Section>
 
-	<Section class:list={"bg-white"}>
+	<Section class:list={"bg-gradient-to-br from-brand-red/10 via-white to-brand-red/5"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
 				<Badge color="red" title="logistics" />
 				<h2 class="font-black h2 !my-4">Inquiry of the week</h2>
 
-				<span class="text-brand-red text-2xl font-bold italic">Copper cathode spot pricing</span>
+				<div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border-l-4 border-brand-red shadow-md my-6">
+					<span class="text-brand-red text-2xl font-bold italic">Copper cathode spot pricing</span>
+				</div>
 
-				<p>
+				<p class="text-lg">
 					This week we're highlighting copper cathode sourcing opportunities. Contact our team for current LME-indexed pricing, available volumes, and logistics support for container or bulk shipments.
 				</p>
 
@@ -184,31 +219,51 @@ import Mussels from "~/assets/images/copper.jpg";
 				</div>
 			</div>
 			<div slot="hero-content-right">
-				<Picture
-					class:list={"mx-auto rounded-[3rem] shadow-2xl"}
-					src={Mussels}
-					height={600}
-					formats={["avif", "webp"]}
-					alt="A description of my image."
-				/>
+				<div class="relative group">
+					<div class="absolute -inset-1 bg-gradient-to-r from-brand-red to-brand-green rounded-[3.5rem] blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
+					<Picture
+						class:list={"relative mx-auto rounded-[3rem] shadow-2xl"}
+						src={Mussels}
+						height={600}
+						formats={["avif", "webp"]}
+						alt="Copper materials"
+					/>
+				</div>
 			</div>
 		</Hero>
 	</Section>
 
 	<!-- Desserts -->
-	<Section class:list={"bg-white"}>
+	<Section class:list={"bg-gradient-to-b from-white to-gray-50"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none order-2">
 				<Badge title="capabilities" />
 				<h2 slot="heading-title" class="font-black text-brand-green h2 !my-4">Sourcing support</h2>
 				<div slot="heading-content">
-					<p>
+					<p class="text-lg">
 						From grade verification to logistics coordination, our team provides end-to-end support for industrial material procurement. We handle documentation, compliance checks, and supply-chain visibility.
 					</p>
 
-					<p>
-						Whether you need spot quantities or long-term supply contracts, we connect buyers with verified sources and facilitate transparent transactions across multiple jurisdictions.
-					</p>
+					<div class="grid gap-4 my-6 not-prose">
+						<div class="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+							<svg class="size-6 text-brand-green flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+							</svg>
+							<div>
+								<p class="font-semibold text-gray-900 mb-1">Spot quantities & long-term contracts</p>
+								<p class="text-sm text-gray-600">Flexible procurement options for your needs</p>
+							</div>
+						</div>
+						<div class="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+							<svg class="size-6 text-brand-green flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+							</svg>
+							<div>
+								<p class="font-semibold text-gray-900 mb-1">Verified sources worldwide</p>
+								<p class="text-sm text-gray-600">Connect with trusted suppliers across jurisdictions</p>
+							</div>
+						</div>
+					</div>
 
 					<div class="mt-8">
 						<Button url="/menu">Browse catalog</Button>
@@ -217,47 +272,64 @@ import Mussels from "~/assets/images/copper.jpg";
 			</div>
 
 			<div slot="hero-content-right">
-				<Picture
-					class:list={"mx-auto rounded-[3rem] shadow-2xl"}
-					src={Dessert}
-					height={600}
-					formats={["avif", "webp"]}
-					alt="A description of my image."
-				/>
+				<div class="relative group">
+					<div class="absolute -inset-1 bg-gradient-to-r from-brand-green to-brand-red rounded-[3.5rem] blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
+					<Picture
+						class:list={"relative mx-auto rounded-[3rem] shadow-2xl"}
+						src={Dessert}
+						height={600}
+						formats={["avif", "webp"]}
+						alt="Business sourcing support"
+					/>
+				</div>
 			</div>
 		</Hero>
 	</Section>
 
 	<!-- Contact -->
-	<Section class:list={"bg-white"}>
-		<Hero>
-			<div slot="hero-content-left" class="prose max-w-none">
-				<Badge color="red" title="get started" />
-				<h2 slot="heading-title" class="font-black text-brand-red h2 !my-4">Ready to source materials?</h2>
-				<div slot="heading-content">
-					<p>
-						Contact our sourcing team to discuss your material requirements, volume needs, and logistics preferences. We provide personalized support for both one-time purchases and ongoing supply relationships.
-					</p>
+	<Section class:list={"bg-gradient-to-br from-brand-red/10 via-white to-brand-green/5 relative overflow-hidden"}>
+		<div class="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none"></div>
+		<div class="relative">
+			<Hero>
+				<div slot="hero-content-left" class="prose max-w-none">
+					<Badge color="red" title="get started" />
+					<h2 slot="heading-title" class="font-black text-brand-red h2 !my-4">Ready to source materials?</h2>
+					<div slot="heading-content">
+						<p class="text-lg">
+							Contact our sourcing team to discuss your material requirements, volume needs, and logistics preferences. We provide personalized support for both one-time purchases and ongoing supply relationships.
+						</p>
 
-					<span class="text-brand-red font-medium">
-						✔ Flexible logistics options including FOB, CFR, and CIF terms
-					</span>
+						<div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 shadow-lg my-6 not-prose">
+							<div class="flex items-start gap-3">
+								<svg class="size-6 text-brand-red flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+								</svg>
+								<div>
+									<p class="font-semibold text-gray-900 text-lg">Flexible logistics options</p>
+									<p class="text-gray-600 mt-1">Including FOB, CFR, and CIF terms</p>
+								</div>
+							</div>
+						</div>
 
-					<div class="mt-8">
-						<Button color="red" url="/book">Request a quote</Button>
+						<div class="mt-8">
+							<Button color="red" url="/book">Request a quote</Button>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div slot="hero-content-right">
-				<Picture
-					class:list={"mx-auto rounded-[3rem] shadow-2xl"}
-					src={FinalCTA}
-					height={600}
-					formats={["avif", "webp"]}
-					alt="A description of my image."
-				/>
-			</div>
-		</Hero>
+				<div slot="hero-content-right">
+					<div class="relative group">
+						<div class="absolute -inset-1 bg-gradient-to-r from-brand-red to-brand-green rounded-[3.5rem] blur opacity-30 group-hover:opacity-50 transition duration-300 animate-pulse"></div>
+						<Picture
+							class:list={"relative mx-auto rounded-[3rem] shadow-2xl"}
+							src={FinalCTA}
+							height={600}
+							formats={["avif", "webp"]}
+							alt="Contact our team"
+						/>
+					</div>
+				</div>
+			</Hero>
+		</div>
 	</Section>
 </Layout>

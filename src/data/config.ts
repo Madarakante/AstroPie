@@ -2,7 +2,7 @@
 export const siteLang = "en-US";
 export const siteCurrency = "USD";
 export const siteDomain = "company-name.com";
-export const siteName = "[Company Name]";
+export const siteName = "A.T Global Recycling and Projects";
 export const siteSlogan = "Global sourcing for industrial materials";
 export const themeColor = "#1e3a5f";
 
@@ -12,8 +12,13 @@ export const phone = {
 };
 
 export const email = {
-	href: "mailto:sourcing@company-name.com",
-	label: "sourcing@company-name.com",
+	href: "mailto:sales@atglobalrecycling.com",
+	label: "sales@atglobalrecycling.com",
+};
+
+export const emailSecondary = {
+	href: "mailto:atglobaltrade26@gmail.com",
+	label: "atglobaltrade26@gmail.com",
 };
 
 export const address = {

@@ -10,11 +10,11 @@ const rmTrailingSlash = (path: string): string => {
 const pathname = rmTrailingSlash(Astro.url.pathname);
 ---
 
-<header x-data="{ open: false }" @keydown.window.escape="open = false">
+<header x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50">
 	<div class="container py-6">
 		<nav class="flex items-center justify-between" aria-label="Global">
 			<a href="/" class="-m-1.5 p-1.5">
-				<p class="font-bold text-4xl text-brand-green">[Company <span class="text-brand-red bg-brand-red/5 px-3 ml-1 rounded-lg">Name</span>]</p>
+				<p class="font-bold text-4xl text-brand-green">A.T Global <span class="text-brand-red bg-brand-red/5 px-3 ml-1 rounded-lg">Recycling</span></p>
 			</a>
 			<div class="flex lg:hidden">
 				<button
@@ -66,7 +66,7 @@ const pathname = rmTrailingSlash(Astro.url.pathname);
 			>
 				<div class="flex items-center justify-between">
 					<a href="/" class="-m-1.5 p-1.5">
-						<p class="font-bold text-4xl text-brand-green">Astro<span class="text-brand-red">Pie</span></p>
+						<p class="font-bold text-4xl text-brand-green">A.T Global <span class="text-brand-red">Recycling</span></p>
 					</a>
 					<button type="button" class="-m-2.5 p-2.5 text-brand-red" @click="open = false">
 						<span class="sr-only">Close menu</span>

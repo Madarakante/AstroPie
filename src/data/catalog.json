@@ -239,5 +239,173 @@
 				"price": null
 			}
 		]
+	},
+	{
+		"id": 8,
+		"slug": "property-management",
+		"prettyName": "Property Management & Maintenance",
+		"description": "Integrated property oversight, maintenance scheduling, and grounds care for commercial and residential portfolios.",
+		"plates": [
+			{
+				"name": "Facility Inspections & Reporting",
+				"description": "Routine site walkthroughs, compliance checks, and actionable maintenance reports.",
+				"price": null
+			},
+			{
+				"name": "Preventive Maintenance",
+				"description": "Scheduled servicing of HVAC, electrical, plumbing, and safety systems to minimize downtime.",
+				"price": null
+			},
+			{
+				"name": "Repairs & Handyman Services",
+				"description": "On-demand fixes for building fabric, fixtures, and utilities with vetted technicians.",
+				"price": null
+			},
+			{
+				"name": "Grounds & Landscaping",
+				"description": "Exterior upkeep including lawn care, irrigation checks, and seasonal clean-ups.",
+				"price": null
+			}
+		]
+	},
+	{
+		"id": 9,
+		"slug": "commodity-supplies",
+		"prettyName": "General Commodity Supplies",
+		"description": "Procurement of everyday operational consumables, safety gear, and site essentials.",
+		"plates": [
+			{
+				"name": "Bulk Consumables",
+				"description": "Packaging, fasteners, and other high-usage items consolidated for cost-effective replenishment.",
+				"price": null
+			},
+			{
+				"name": "Safety Gear & PPE",
+				"description": "Helmets, gloves, eye protection, and high-visibility apparel compliant with site standards.",
+				"price": null
+			},
+			{
+				"name": "Office & Janitorial Supplies",
+				"description": "Stationery, printer media, and cleaning consumables stocked for day-to-day operations.",
+				"price": null
+			},
+			{
+				"name": "Building Materials & Hardware",
+				"description": "Cement, aggregates, basic tools, and fittings sourced to project specifications.",
+				"price": null
+			}
+		]
+	},
+	{
+		"id": 10,
+		"slug": "transport-services",
+		"prettyName": "Transport Related Services",
+		"description": "Logistics support from first-mile pickup to regional deliveries with compliant documentation.",
+		"plates": [
+			{
+				"name": "Local & Regional Deliveries",
+				"description": "Scheduled collections and drop-offs with tracked vehicles and proof-of-delivery.",
+				"price": null
+			},
+			{
+				"name": "Fleet Hire & Drivers",
+				"description": "Vehicle sourcing with qualified drivers for short- or long-term contracts.",
+				"price": null
+			},
+			{
+				"name": "Route Planning & Dispatch",
+				"description": "Optimized scheduling, load consolidation, and live dispatch coordination.",
+				"price": null
+			},
+			{
+				"name": "Cross-Border Documentation",
+				"description": "Customs paperwork, permits, and compliance checks for regulated cargo.",
+				"price": null
+			}
+		]
+	},
+	{
+		"id": 11,
+		"slug": "general-cleaning",
+		"prettyName": "General Cleaning",
+		"description": "Routine and deep-cleaning programs tailored to offices, retail, and industrial environments.",
+		"plates": [
+			{
+				"name": "Office & Commercial Cleaning",
+				"description": "Daily or weekly cleaning schedules with dusting, waste removal, and surface sanitization.",
+				"price": null
+			},
+			{
+				"name": "Deep Cleaning & Sanitization",
+				"description": "High-touch disinfection, floor care, and HVAC vent cleaning for hygienic environments.",
+				"price": null
+			},
+			{
+				"name": "Post-Construction Cleaning",
+				"description": "Dust removal, debris collection, and finish cleaning after renovation or fit-out.",
+				"price": null
+			},
+			{
+				"name": "Window & Façade Care",
+				"description": "Interior and exterior glass cleaning with safety-compliant access methods.",
+				"price": null
+			}
+		]
+	},
+	{
+		"id": 12,
+		"slug": "rubble-removals",
+		"prettyName": "Rubble Removals",
+		"description": "Clearance and compliant disposal of construction debris and site waste.",
+		"plates": [
+			{
+				"name": "Construction Debris Hauling",
+				"description": "Collection and transport of bricks, concrete, timber, and scrap from active sites.",
+				"price": null
+			},
+			{
+				"name": "Site Clean-up & Disposal",
+				"description": "On-site sorting, loading, and tipping at licensed facilities with disposal receipts.",
+				"price": null
+			},
+			{
+				"name": "Skip Bin Provision",
+				"description": "Temporary bins delivered and collected on agreed schedules for project waste.",
+				"price": null
+			},
+			{
+				"name": "Material Recycling Coordination",
+				"description": "Segregation and routing of recyclable rubble to reduce landfill volumes.",
+				"price": null
+			}
+		]
+	},
+	{
+		"id": 13,
+		"slug": "fumigation-pest-control",
+		"prettyName": "Fumigation (Pest Control)",
+		"description": "Targeted pest management programs for residential, commercial, and warehouse spaces.",
+		"plates": [
+			{
+				"name": "Interior Pest Control",
+				"description": "Safe treatments for crawling and flying insects with occupant-friendly schedules.",
+				"price": null
+			},
+			{
+				"name": "Warehouse Fumigation",
+				"description": "Gas or mist treatments for bulk storage areas with ventilation and clearance certification.",
+				"price": null
+			},
+			{
+				"name": "Rodent Management & Proofing",
+				"description": "Baiting, trapping, and access-point sealing to prevent re-infestation.",
+				"price": null
+			},
+			{
+				"name": "Preventive Treatment Programs",
+				"description": "Scheduled inspections and barrier treatments to maintain pest-free facilities.",
+				"price": null
+			}
+		]
 	}
 ]
