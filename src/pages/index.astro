@@ -32,7 +32,7 @@ import Mussels from "~/assets/images/copper.jpg";
 				src={PizzaHero}
 				formats={["avif", "webp"]}
 				alt="Industrial materials background"
-				class="w-full h-full object-cover"
+				class="w-full h-full object-cover object-center"
 				loading={"eager"}
 				fetchpriority={"high"}
 			/>
@@ -200,7 +200,7 @@ import Mussels from "~/assets/images/copper.jpg";
 		</div>
 	</Section>
 
-	<Section class:list={"bg-gradient-to-br from-brand-red/10 via-white to-brand-red/5"}>
+	<Section class:list={"bg-gradient-to-br from-brand-red/10 via-white to-brand-red/5 border-t border-gray-200"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
 				<Badge color="red" title="logistics" />
@@ -293,7 +293,7 @@ import Mussels from "~/assets/images/copper.jpg";
 			<Hero>
 				<div slot="hero-content-left" class="prose max-w-none">
 					<Badge color="red" title="get started" />
-					<h2 slot="heading-title" class="font-black text-brand-red h2 !my-4">Ready to source materials?</h2>
+					<h2 slot="heading-title" class="font-black h2 !my-4">Ready to source materials?</h2>
 					<div slot="heading-content">
 						<p class="text-lg">
 							Contact our sourcing team to discuss your material requirements, volume needs, and logistics preferences. We provide personalized support for both one-time purchases and ongoing supply relationships.
