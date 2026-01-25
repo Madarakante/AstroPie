@@ -26,6 +26,9 @@ const gallery = await getCollection("gallery");
 							src={item.data.image}
 							alt={item.data.alt}
 							class="h-full w-full object-cover object-center"
+							formats={["avif", "webp", "jpeg"]}
+							widths={[320, 640, 960, 1280]}
+							sizes="(min-width: 1024px) 33vw, 50vw"
 							loading={index < 3 ? "eager" : "lazy"}
                             fetchpriority={index < 3 ? "high" : "auto"}
 						/>

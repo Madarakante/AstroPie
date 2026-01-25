@@ -7,8 +7,8 @@ export const siteSlogan = "Global sourcing for industrial materials";
 export const themeColor = "#1e3a5f";
 
 export const phone = {
-	href: "tel:+123456789",
-	label: "(123) 456-789",
+	href: "tel:+27688381511",
+	label: "+27688381511",
 };
 
 export const email = {
@@ -17,8 +17,8 @@ export const email = {
 };
 
 export const emailSecondary = {
-	href: "mailto:atglobaltrade26@gmail.com",
-	label: "atglobaltrade26@gmail.com",
+	href: "mailto:globalrecyclingproatg@gmail.com",
+	label: "globalrecyclingproatg@gmail.com",
 };
 
 export const address = {
